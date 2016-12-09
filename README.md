@@ -41,7 +41,4 @@ In the code, go to andrdoidManifest.xml and replace this line with your API KEY
 ```
 
 
-[npm-image]: https://#
-[npm-url]: https://#
-[travis-image]: https://#
-[travis-url]: https://#
+
