@@ -30,34 +30,15 @@ dependencies {
     
 #Step 3
 
-In the code, go to andrdoidManifest.xml and replace this line 
+In the code, go to andrdoidManifest.xml and replace this line with your API KEY
 
 
-```js
-// EXAMPLE: only log error responses
-morgan('combined', {
-  skip: function (req, res) { return res.statusCode < 400 }
-})
 ```
+	<meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="YOUR_API_KEY"/>
 
-
-
-
-#### Options
-
-Morgan accepts these properties in the options object.
-
-##### immediate
-
-Write log line on request instead of response. This means that a requests will
-be logged even if the server crashes, _but data from the response (like the
-response code, content length, etc.) cannot be logged_.
-
-##### skip
-
-Function to determine if logging is skipped, defaults to `false`. This function
-will be called as `skip(req, res)`.
-
+```
 
 
 [npm-image]: https://#
